@@ -3,6 +3,7 @@ package com.company;
 import com.company.BattlingFighters.LuckyFighter;
 import com.company.BattlingFighters.LuckyGameEngine;
 import com.company.BattlingFighters.Strategy;
+import com.company.IrresponsibleRectange.DrawingEngineDemo;
 import com.company.MusicCollection.*;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -57,7 +58,8 @@ public class Main {
 //    System.out.println("All " + Genre.ROCK + " records by " + queen.getName() + ":");
 //    queen.showGenre(Genre.ROCK);
 
-
+//    DrawingEngineDemo p10 = new DrawingEngineDemo();
+//    DrawingEngineDemo.main(args);
   }
 }
 
