@@ -1,0 +1,7 @@
+The file PrintBook creates a set (i.e. distinct) books;
+The book then adds 2 books "C++" and "Haskell" to the set;
+The book "Java" is not added to the set as it is regarded as the same object as the "C++" in the set
+  as the ISBN value is the same;
+The name of "C++" is then changed to "New C++ book", which is automatically changed in the set
+  due to it pointing at the same object;
+Then all books are printed in the format ***title + (ISBN:  + isbn + )***

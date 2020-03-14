@@ -1,4 +1,4 @@
-package com.company.IrresponsibleRectange;
+package com.company.IrresponsibleRectange.Post;
 
 public class Rectangle {
 

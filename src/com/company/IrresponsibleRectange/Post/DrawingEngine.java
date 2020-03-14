@@ -1,4 +1,4 @@
-package com.company.IrresponsibleRectange;
+package com.company.IrresponsibleRectange.Post;
 
 import java.util.HashSet;
 import java.util.Set;

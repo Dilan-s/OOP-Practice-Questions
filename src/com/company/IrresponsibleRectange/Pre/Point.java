@@ -1,4 +1,4 @@
-package com.company.IrresponsibleRectange;
+package com.company.IrresponsibleRectange.Pre;
 
 public class Point {
 
@@ -21,4 +21,5 @@ public class Point {
   public String toString() {
     return "(" + getCoordX() + ", " + getCoordY() + ")";
   }
+
 }

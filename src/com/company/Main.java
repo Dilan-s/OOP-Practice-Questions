@@ -1,18 +1,15 @@
 package com.company;
 
-import com.company.BattlingFighters.LuckyFighter;
-import com.company.BattlingFighters.LuckyGameEngine;
-import com.company.BattlingFighters.Strategy;
-import com.company.IrresponsibleRectange.DrawingEngineDemo;
-import com.company.MusicCollection.*;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+//import java.io.IOException;
+
+import com.company.BloatedPerson.Post.Address;
+import com.company.BloatedPerson.Post.Date;
+import com.company.BloatedPerson.Post.Name;
+import com.company.BloatedPerson.Post.Person;
 
 public class Main {
 
-  public static void main(String[] args) throws IOException {
+  public static void main(String[] args) {
 
 //    int integerVersionOfFirstArgument = Integer.parseInt(args[0]);
 //    CollatzConjecture p1 = new CollatzConjecture(integerVersionOfFirstArgument);
@@ -60,6 +57,12 @@ public class Main {
 
 //    DrawingEngineDemo p10 = new DrawingEngineDemo();
 //    DrawingEngineDemo.main(args);
+
+    Name name = new Name("Dilan Pankaj", "Sheth");
+    Date date = new Date(26, 03, 2001);
+    Address address = new Address(201, "Kenmore Avenue", "Harrow", "HA3 8PB");
+    Person p11 = new Person(name, date, address, "NiNo.");
+    System.out.println(p11);
   }
 }
 

@@ -1,4 +1,4 @@
-package com.company.IrresponsibleRectange;
+package com.company.IrresponsibleRectange.Pre;
 
 public class DrawingEngineDemo {
 
@@ -18,8 +18,10 @@ public class DrawingEngineDemo {
     Rectangle r1 = new Rectangle(new Point(5, 5), 10, 20);
     Rectangle r2 = new Rectangle(new Point(2, 2), 15, 25);
 
-    System.out.println("Rectangle " + r2 + " contains "
-        + r1 + ": " + r2.contains(r1));
+    System.out.println("Rectangle " + engine.rectangleToString(r2) + " contains "
+        + engine.rectangleToString(r1) + ": " + engine.contains(r2, r1));
 
   }
+
+
 }
