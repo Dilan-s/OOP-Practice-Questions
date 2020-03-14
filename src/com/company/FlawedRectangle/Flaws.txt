@@ -1,0 +1,4 @@
+Enabling the width and height to be set means the corresponding area the rectangle is initialised
+  with is no longer relevant, or correct.
+The class should have the fields as final fields for maximum encapsulation and not provide setter
+  methods. An alternative would be to call a method to calculate the area using a method instead.
