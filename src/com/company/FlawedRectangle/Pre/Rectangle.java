@@ -1,4 +1,4 @@
-package com.company.FlawedRectangle;
+package com.company.FlawedRectangle.Pre;
 
 public class Rectangle {
 
