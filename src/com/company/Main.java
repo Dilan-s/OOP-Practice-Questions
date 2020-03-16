@@ -3,9 +3,12 @@ package com.company;
 //import java.io.IOException;
 
 import com.company.BloatedPerson.Post.Address;
+import com.company.BloatedPerson.Post.BloatedPersonDemo;
 import com.company.BloatedPerson.Post.Date;
 import com.company.BloatedPerson.Post.Name;
 import com.company.BloatedPerson.Post.Person;
+import com.company.ComparingPeople.ComparingPeopleDemo;
+import com.company.MusicCollection.MusicCollectionDemo;
 
 public class Main {
 
@@ -43,26 +46,18 @@ public class Main {
 //    LuckyGameEngine p8 = new LuckyGameEngine(f1, f2);
 //    p8.simulateBattle();
 
-//    /*p9*/
-//    Artist queen = new Artist("Queen", Genre.ROCK);
-//    queen.addRecord("A Night At the Opera");
-//    queen.addRecord("Hot Space", Genre.POP);
-//    queen.addRecord("A Day at the Races", Genre.ROCK);
-//    queen.addRecord("Innuendo", Genre.ROCK);
-//    System.out.println("All records by " + queen.getName() + ":");
-//    queen.showCatalogue();
-//    System.out.println("");
-//    System.out.println("All " + Genre.ROCK + " records by " + queen.getName() + ":");
-//    queen.showGenre(Genre.ROCK);
+//    MusicCollectionDemo p9 = new MusicCollectionDemo();
+//    MusicCollectionDemo.main(args);
 
 //    DrawingEngineDemo p10 = new DrawingEngineDemo();
 //    DrawingEngineDemo.main(args);
 
-    Name name = new Name("Dilan Pankaj", "Sheth");
-    Date date = new Date(26, 03, 2001);
-    Address address = new Address(201, "Kenmore Avenue", "Harrow", "HA3 8PB");
-    Person p11 = new Person(name, date, address, "NiNo.");
-    System.out.println(p11);
+//    BloatedPersonDemo p11 = new BloatedPersonDemo();
+//    BloatedPersonDemo.main(args);
+
+    ComparingPeopleDemo p12 = new ComparingPeopleDemo();
+    ComparingPeopleDemo.main(args);
+
   }
 }
 
