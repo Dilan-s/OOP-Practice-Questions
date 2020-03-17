@@ -2,13 +2,8 @@ package com.company;
 
 //import java.io.IOException;
 
-import com.company.BloatedPerson.Post.Address;
-import com.company.BloatedPerson.Post.BloatedPersonDemo;
-import com.company.BloatedPerson.Post.Date;
-import com.company.BloatedPerson.Post.Name;
-import com.company.BloatedPerson.Post.Person;
-import com.company.ComparingPeople.ComparingPeopleDemo;
-import com.company.MusicCollection.MusicCollectionDemo;
+import com.company.UsingStreams.UsingStreamMapAndStreamFilter;
+import com.company.UsingStreams.UsingStreamReduce;
 
 public class Main {
 
@@ -55,8 +50,14 @@ public class Main {
 //    BloatedPersonDemo p11 = new BloatedPersonDemo();
 //    BloatedPersonDemo.main(args);
 
-    ComparingPeopleDemo p12 = new ComparingPeopleDemo();
-    ComparingPeopleDemo.main(args);
+//    ComparingPeopleDemo p12 = new ComparingPeopleDemo();
+//    ComparingPeopleDemo.main(args);
+
+//    UsingStreamMapAndStreamFilter p13 = new UsingStreamMapAndStreamFilter();
+//    UsingStreamMapAndStreamFilter.main(args);
+
+    UsingStreamReduce p14 = new UsingStreamReduce();
+    UsingStreamReduce.main(args);
 
   }
 }
