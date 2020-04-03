@@ -2,7 +2,8 @@ package com.company;
 
 //import java.io.IOException;
 
-import com.company.UsingStreams.UsingStreamMapAndStreamFilter;
+import com.company.ColouredPoints.Colour;
+import com.company.ColouredPoints.ColouredPoint;
 import com.company.UsingStreams.UsingStreamReduce;
 
 public class Main {
@@ -56,8 +57,11 @@ public class Main {
 //    UsingStreamMapAndStreamFilter p13 = new UsingStreamMapAndStreamFilter();
 //    UsingStreamMapAndStreamFilter.main(args);
 
-    UsingStreamReduce p14 = new UsingStreamReduce();
-    UsingStreamReduce.main(args);
+//    UsingStreamReduce p14 = new UsingStreamReduce();
+//    UsingStreamReduce.main(args);
+
+    ColouredPoint p15 = new ColouredPoint(0, 0, 0, Colour.RED);
+    ColouredPoint.main(args);
 
   }
 }
