@@ -4,6 +4,7 @@ package com.company;
 
 import com.company.ColouredPoints.Colour;
 import com.company.ColouredPoints.ColouredPoint;
+import com.company.Trees.TreeDemo;
 import com.company.UsingStreams.UsingStreamReduce;
 
 public class Main {
@@ -60,9 +61,11 @@ public class Main {
 //    UsingStreamReduce p14 = new UsingStreamReduce();
 //    UsingStreamReduce.main(args);
 
-    ColouredPoint p15 = new ColouredPoint(0, 0, 0, Colour.RED);
-    ColouredPoint.main(args);
+//    ColouredPoint p15 = new ColouredPoint(0, 0, 0, Colour.RED);
+//    ColouredPoint.main(args);
 
+    TreeDemo p16 = new TreeDemo();
+    TreeDemo.main(args);
   }
 }
 
