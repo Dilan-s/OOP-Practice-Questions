@@ -78,4 +78,9 @@ public class BinaryTreeNode<T extends Comparable<T>> extends AbstractTreeNode<T>
       }
     }
   }
+
+  @Override
+  public TreeNode<T> clone() {
+    return null;
+  }
 }

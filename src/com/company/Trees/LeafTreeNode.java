@@ -21,6 +21,11 @@ public class LeafTreeNode<T extends Comparable<T>> extends AbstractTreeNode<T> {
   public boolean addChild(TreeNode<T> child) {
     return false;
   }
+
+  @Override
+  public TreeNode<T> clone() {
+    return null;
+  }
 }
 
 

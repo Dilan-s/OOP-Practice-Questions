@@ -34,4 +34,16 @@ public class GenericTreeNode<E extends Comparable<E>> extends AbstractTreeNode<E
     return true;
   }
 
+  @Override
+  public TreeNode<E> clone() {
+    TreeNode<E> clone = new GenericTreeNode<>(children.length);
+    clone.setKey(super.key);
+    int pointer = 0;
+    for (TreeNode<E> child : children){
+      clone.setChild(pointer, child.clone());
+      pointer++;
+    }
+    return clone;
+  }
+
 }

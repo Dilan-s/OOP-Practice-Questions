@@ -13,4 +13,6 @@ public interface TreeNode<E> {
   void setKey(E key);
 
   boolean addChild(TreeNode<E> child);
+
+  TreeNode<E> clone();
 }

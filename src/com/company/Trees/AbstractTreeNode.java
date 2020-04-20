@@ -33,4 +33,7 @@ public abstract class AbstractTreeNode<T extends Comparable<T>> implements TreeN
     }
     return sb.toString();
   }
+
+  public abstract TreeNode<T> clone();
+
 }
