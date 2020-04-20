@@ -2,10 +2,7 @@ package com.company;
 
 //import java.io.IOException;
 
-import com.company.ColouredPoints.Colour;
-import com.company.ColouredPoints.ColouredPoint;
-import com.company.Trees.TreeDemo;
-import com.company.UsingStreams.UsingStreamReduce;
+import com.company.IntSets.IntSetDemo;
 
 public class Main {
 
@@ -64,8 +61,16 @@ public class Main {
 //    ColouredPoint p15 = new ColouredPoint(0, 0, 0, Colour.RED);
 //    ColouredPoint.main(args);
 
-    TreeDemo p16 = new TreeDemo();
-    TreeDemo.main(args);
+//    TreeDemo p16 = new TreeDemo();
+//    TreeDemo.main(args);
+
+//    StringStackDemo p17 = new StringStackDemo();
+//    StringStackDemo.main(args);
+
+//    IntSetDemo p18 = new IntSetDemo();
+//    IntSetDemo.main(args);
+
+
   }
 }
 
