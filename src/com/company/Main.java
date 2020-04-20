@@ -3,6 +3,7 @@ package com.company;
 //import java.io.IOException;
 
 import com.company.GenericIntSets.GenericIntSetDemo;
+import com.company.GenericMethodsWithStreams.Example;
 import com.company.GenericStringStack.GenericStack;
 import com.company.GenericStringStack.GenericStackDemo;
 import com.company.IntSets.IntSetDemo;
@@ -78,6 +79,12 @@ public class Main {
 
 //    GenericIntSetDemo p20 = new GenericIntSetDemo();
 //    GenericIntSetDemo.main(args);
+
+//    Example p21 = new Example();
+//    Example.main(args);
+
+//    BoundedGenericMethodsWithStreams p22 = new BoundedGenericMethodsWithStreams();
+//    BoundedGenericMethodsWithStreams.main(args);
 
   }
 }
