@@ -2,6 +2,9 @@ package com.company;
 
 //import java.io.IOException;
 
+import com.company.GenericIntSets.GenericIntSetDemo;
+import com.company.GenericStringStack.GenericStack;
+import com.company.GenericStringStack.GenericStackDemo;
 import com.company.IntSets.IntSetDemo;
 
 public class Main {
@@ -70,6 +73,11 @@ public class Main {
 //    IntSetDemo p18 = new IntSetDemo();
 //    IntSetDemo.main(args);
 
+//    GenericStackDemo p19 = new GenericStackDemo();
+//    GenericStackDemo.main(args);
+
+//    GenericIntSetDemo p20 = new GenericIntSetDemo();
+//    GenericIntSetDemo.main(args);
 
   }
 }

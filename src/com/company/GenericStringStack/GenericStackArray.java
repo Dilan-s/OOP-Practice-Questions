@@ -1,24 +1,25 @@
-package com.company.StringStack;
+package com.company.GenericStringStack;
 
-public class StringStackArray implements StringStack{
+public class GenericStackArray<T> implements GenericStack<T> {
 
   public final int MAX_STACK = 100;
-  private final String[] stack;
+  private final T[] stack;
   private int stackPointer;
 
-  public StringStackArray() {
-    stack = new String[MAX_STACK];
+  @SuppressWarnings("unchecked")
+  public GenericStackArray() {
+    stack = (T[]) new Object[MAX_STACK];
     stackPointer = 0;
   }
 
-  public void push(String s){
+  public void push(T s){
     if (stackPointer < MAX_STACK){
       stack[stackPointer] = s;
       stackPointer++;
     }
   }
 
-  public String pop(){
+  public T pop(){
     if (stackPointer > 0){
       stackPointer--;
       return stack[stackPointer];
