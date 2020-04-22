@@ -1,9 +1,10 @@
 package com.company.GenericIntSets;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
-public class GenericMemoryEfficientSet<T> implements GenericSet<T> {
+public class GenericMemoryEfficientSet<T> extends AbstractGenericSet<T> {
 
   private final List<T> set;
 
@@ -31,5 +32,30 @@ public class GenericMemoryEfficientSet<T> implements GenericSet<T> {
   @Override
   public boolean isEmpty() {
     return set.isEmpty();
+  }
+
+
+  @Override
+  public GenericSetIterator<T> iterator() {
+    return new GenericMemoryIterator<T>();
+  }
+
+  private class GenericMemoryIterator<T> implements GenericSetIterator<T> {
+
+    Iterator<T> iterator;
+
+    public GenericMemoryIterator() {
+      iterator = (Iterator<T>) set.iterator();
+    }
+
+    @Override
+    public boolean hasNext() {
+      return iterator.hasNext();
+    }
+
+    @Override
+    public T next() {
+      return iterator.next();
+    }
   }
 }

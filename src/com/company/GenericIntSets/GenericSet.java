@@ -1,5 +1,7 @@
 package com.company.GenericIntSets;
 
+import com.company.IntSets.IntSet;
+
 public interface GenericSet<T> {
 
   void add(T x);
@@ -10,4 +12,11 @@ public interface GenericSet<T> {
 
   boolean isEmpty();
 
+  void addAll(GenericSet<T> other);
+
+  void removeALl(GenericSet<T> other);
+
+  boolean contains(GenericSet<T> other);
+
+  GenericSetIterator<T> iterator();
 }
