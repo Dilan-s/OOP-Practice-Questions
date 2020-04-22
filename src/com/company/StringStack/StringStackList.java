@@ -1,15 +1,15 @@
 package com.company.StringStack;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
+import java.util.Iterator;
 import java.util.List;
 
-public class StringStackList implements StringStack{
+public class StringStackList extends AbstractStringStack{
 
   private final List<String> stack;
 
   public StringStackList() {
-    stack = new LinkedList<>();
+    stack = new ArrayList<>();
   }
 
   public void push(String s) {
@@ -27,4 +27,27 @@ public class StringStackList implements StringStack{
     return stack.isEmpty();
   }
 
+  @Override
+  public StringStackIterator iterator() {
+    return new StringStackListIterator();
+  }
+
+  private class StringStackListIterator implements StringStackIterator{
+
+    Iterator<String> iterator;
+
+    public StringStackListIterator() {
+      iterator = stack.iterator();
+    }
+
+    @Override
+    public boolean hasNext() {
+      return iterator.hasNext();
+    }
+
+    @Override
+    public String next() {
+      return iterator.next();
+    }
+  }
 }

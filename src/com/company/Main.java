@@ -1,7 +1,6 @@
 package com.company;
 
-//import java.io.IOException;
-
+import java.io.IOException;
 import com.company.GenericIntSets.GenericIntSetDemo;
 import com.company.GenericMethodsWithStreams.Example;
 import com.company.GenericStringStack.GenericStack;
@@ -15,22 +14,22 @@ public class Main {
 //    int integerVersionOfFirstArgument = Integer.parseInt(args[0]);
 //    CollatzConjecture p1 = new CollatzConjecture(integerVersionOfFirstArgument);
 //    System.out.println(p1);
-//
+
 //    PerfectPalindromes p2 = new PerfectPalindromes();
 //    System.out.println(p2);
-//
+
 //    LotteryNumbers p3 = new LotteryNumbers();
 //    System.out.println(p3);
-//
+
 //    RandomNumbers p4 = new RandomNumbers(integerVersionOfFirstArgument);
 //    System.out.println(p4);
-//
+
 //    ReverseOrder p5 = new ReverseOrder();
 //    System.out.println(p5);
-//
+
 //    PigLatin p6 = new PigLatin();
 //    System.out.println(p6);
-//
+
 //    WordCount p7 = new WordCount();
 //    System.out.println(p7);
 

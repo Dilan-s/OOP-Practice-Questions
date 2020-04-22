@@ -24,6 +24,8 @@ public class StringStackDemo {
     first.push("lazy");
     first.push("dog");
 
+    System.out.println(second);
+    System.out.println(first);
     transferStacks(second, first);
 
     assert first.isEmpty();

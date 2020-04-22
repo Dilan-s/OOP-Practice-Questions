@@ -7,4 +7,6 @@ public interface StringStack {
   String pop();
 
   boolean isEmpty();
+
+  StringStackIterator iterator();
 }
