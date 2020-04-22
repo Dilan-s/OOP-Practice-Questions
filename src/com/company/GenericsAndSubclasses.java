@@ -13,7 +13,6 @@ public class GenericsAndSubclasses {
 
   }
 
-
   public static void main(String[] args) {
 
     Set<B> setOfB = new HashSet<B>();
