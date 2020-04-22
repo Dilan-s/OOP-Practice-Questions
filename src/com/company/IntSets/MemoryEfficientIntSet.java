@@ -1,9 +1,10 @@
 package com.company.IntSets;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
-public class MemoryEfficientIntSet implements IntSet {
+public class MemoryEfficientIntSet extends AbstractIntSet {
 
   private final List<Integer> set;
 
@@ -31,5 +32,29 @@ public class MemoryEfficientIntSet implements IntSet {
   @Override
   public boolean isEmpty() {
     return set.isEmpty();
+  }
+
+  @Override
+  public IntSetIterator iterator() {
+    return new MemoryIntSetIterator();
+  }
+
+  private class MemoryIntSetIterator implements IntSetIterator {
+
+    Iterator<Integer> iterator;
+
+    public MemoryIntSetIterator() {
+      iterator = set.iterator();
+    }
+
+    @Override
+    public boolean hasNext() {
+      return iterator.hasNext();
+    }
+
+    @Override
+    public int next() {
+      return iterator.next();
+    }
   }
 }

@@ -1,9 +1,10 @@
 package com.company.IntSets;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
-public class SpeedEfficientIntSet implements IntSet {
+public class SpeedEfficientIntSet extends AbstractIntSet {
 
   private final Set<Integer> set;
 
@@ -29,5 +30,29 @@ public class SpeedEfficientIntSet implements IntSet {
   @Override
   public boolean isEmpty() {
     return set.isEmpty();
+  }
+
+  @Override
+  public IntSetIterator iterator() {
+    return new SpeedIntSetIterator();
+  }
+
+  private class SpeedIntSetIterator implements IntSetIterator {
+
+    Iterator<Integer> iterator;
+
+    public SpeedIntSetIterator() {
+      iterator = set.iterator();
+    }
+
+    @Override
+    public boolean hasNext() {
+      return iterator.hasNext();
+    }
+
+    @Override
+    public int next() {
+      return iterator.next();
+    }
   }
 }

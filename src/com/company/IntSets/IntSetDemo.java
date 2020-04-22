@@ -34,6 +34,7 @@ public class IntSetDemo {
     }
     assert integers != null;
     System.out.println("Set is: " + integers.getClass());
+    System.out.println(integers);
 
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 

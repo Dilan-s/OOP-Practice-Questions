@@ -10,4 +10,12 @@ public interface IntSet {
 
   boolean isEmpty();
 
+  IntSetIterator iterator();
+
+  void addAll(IntSet other);
+
+  void removeALl(IntSet other);
+
+  boolean contains(IntSet other);
+
 }
